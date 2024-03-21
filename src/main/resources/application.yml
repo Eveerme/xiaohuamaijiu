@@ -1,0 +1,23 @@
+server:
+  port: 8090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/xiaohuamaijiu?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 123456
+    driver: com.mysql.cj.jdbc.Driver
+# JWT配置
+jwt:
+  header: "Authorization" #token返回头部
+  tokenPrefix: "Bearer " #token前缀
+  secret: "chen0218" #密钥-自定义
+  expireTime: 3600000 #token有效时间 3600000毫秒 ==> 60分钟
+# 微信小程序配置码
+APPID: wxbdfbe71b5cba2dfc
+
+APPSECRET: 4c4af75376a464e2465678174627d8fd
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #将执行的sql语句打印出来
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
