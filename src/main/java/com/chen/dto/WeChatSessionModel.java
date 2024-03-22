@@ -3,8 +3,6 @@ package com.chen.dto;
 import lombok.Data;
 
 /**
- * Date:2023/6/24
- * author:zmh
  * description: 接收微信服务器返回参数
  **/
 

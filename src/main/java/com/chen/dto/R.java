@@ -3,8 +3,6 @@ package com.chen.dto;
 import lombok.Data;
 
 /**
- * Date:2023/6/19
- * author:zmh
  * description: 前后端数据联调对象
  **/
 
@@ -19,7 +17,7 @@ public class R<T> {
         public static <T> R<T> success(T object) {
             R<T> r = new R<T>();
             r.data = object;
-            r.code = 1;
+            r.code = 200;
             return r;
         }
 

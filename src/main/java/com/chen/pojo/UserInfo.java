@@ -32,6 +32,6 @@ public class UserInfo {
     @JsonFormat(shape=JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
     // 头像
-    private String  picture;
+    private String avatar;
 }
 
