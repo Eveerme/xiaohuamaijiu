@@ -106,7 +106,7 @@ public class UserInfoServiceImpl extends ServiceImpl<UserInfoDao, UserInfo> impl
             // 不存在，将用户信息添加入数据库
             if (userInfo == null){
                 // 填充初始信息
-                UserInfo tempUserInfo = new UserInfo(UUID.randomUUID().toString(),openid,"微信用户", LocalDateTime.now(),"default.jpg");
+                UserInfo tempUserInfo = new UserInfo(UUID.randomUUID().toString(),openid,"微信用户","default.jpg");
                 userInfoDao.insert(tempUserInfo);
                 // 加入数据库成功，登录成功，返回两个数据：用户信息 和 token
                 map.put("user",tempUserInfo);
